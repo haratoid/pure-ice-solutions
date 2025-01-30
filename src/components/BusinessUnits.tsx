@@ -3,7 +3,7 @@ import { Factory, Truck, Building2, Briefcase } from "lucide-react";
 const BusinessUnits = () => {
   const units = [
     {
-      title: "Ice Crystal Factory",
+      title: "Pabrik Es Kristal",
       icon: <Factory className="h-12 w-12 text-ice-primary mb-4" />,
       locations: [
         "Bukit Tinggi - ES Kristal",
@@ -15,27 +15,27 @@ const BusinessUnits = () => {
       ]
     },
     {
-      title: "Ice Block Factory",
+      title: "Pabrik Es Balok",
       icon: <Building2 className="h-12 w-12 text-ice-primary mb-4" />,
-      features: ["Register", "Joint Venture", "Management Fee"]
+      features: ["Registrasi", "Joint Venture", "Biaya Manajemen"]
     },
     {
-      title: "Coldchain Transport",
+      title: "Transportasi Berpendingin",
       icon: <Truck className="h-12 w-12 text-ice-primary mb-4" />,
-      features: ["Rent", "Delivery"]
+      features: ["Sewa", "Pengiriman"]
     },
     {
-      title: "Other Solutions",
+      title: "Solusi Lainnya",
       icon: <Briefcase className="h-12 w-12 text-ice-primary mb-4" />,
-      features: ["Coldchain Solution", "Consultant", "Pengadaan"]
+      features: ["Solusi Rantai Dingin", "Konsultan", "Pengadaan"]
     }
   ];
 
   return (
-    <div className="py-20 bg-gradient-to-b from-white to-ice-secondary">
+    <div id="unit-bisnis" className="py-20 bg-gradient-to-b from-white to-ice-secondary">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-ice-primary text-center mb-16 animate-fade-up">
-          Our Business Units
+          Unit Bisnis Kami
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {units.map((unit, index) => (

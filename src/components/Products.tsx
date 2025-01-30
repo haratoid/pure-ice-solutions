@@ -3,27 +3,27 @@ import { Check } from "lucide-react";
 const Products = () => {
   const products = [
     {
-      title: "Bulk Ice Supply",
-      description: "Large quantities for commercial use",
-      features: ["Food-grade quality", "Custom quantities", "Wholesale pricing"],
+      title: "Pasokan Es Massal",
+      description: "Jumlah besar untuk penggunaan komersial",
+      features: ["Kualitas food-grade", "Kuantitas kustom", "Harga grosir"],
     },
     {
-      title: "Premium Cocktail Ice",
-      description: "Crystal clear cubes for upscale venues",
-      features: ["Perfect clarity", "Slow melting", "Custom sizes"],
+      title: "Es Koktail Premium",
+      description: "Es kristal jernih untuk tempat mewah",
+      features: ["Kejernihan sempurna", "Lambat mencair", "Ukuran kustom"],
     },
     {
-      title: "Event Services",
-      description: "Special occasions and corporate events",
-      features: ["Ice sculptures", "On-site delivery", "24/7 support"],
+      title: "Layanan Acara",
+      description: "Acara khusus dan acara korporat",
+      features: ["Patung es", "Pengiriman ke lokasi", "Dukungan 24/7"],
     },
   ];
 
   return (
-    <div className="py-20 bg-white">
+    <div id="produk" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-ice-primary text-center mb-12">
-          Our Products & Services
+          Produk & Layanan Kami
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product, index) => (

@@ -20,10 +20,11 @@ export default {
     extend: {
       colors: {
         ice: {
-          primary: "#1E3D59",
-          secondary: "#E8F1F5",
-          accent: "#F5F5F5",
-          text: "#0A1F33",
+          primary: "#0EA5E9",
+          secondary: "#D3E4FD",
+          accent: "#F1F1F1",
+          text: "#403E43",
+          dark: "#221F26",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -70,9 +71,20 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "scale-up": {
+          "0%": {
+            transform: "scale(0.95)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
+        "scale-up": "scale-up 0.3s ease-out",
       },
     },
   },
